@@ -1,19 +1,6 @@
-# Annapurna Tiffin - Premium Homemade Nourishment
+# Annapurna Tiffin - Crafted With Mother's Touch 
 
 A modern, high-converting landing page for a premium tiffin service, featuring cinematic scroll-linked animations and a seamless WhatsApp ordering experience.
-
-## 🚀 Deployment Instructions (Vercel)
-
-This project is optimized for deployment on Vercel.
-
-1. **Upload to GitHub**:
-   - Create a new repository on GitHub: `annapurna-tiffin`
-   - Upload all files from this folder (including the `frames/` directory).
-2. **Import to Vercel**:
-   - Go to [vercel.com](https://vercel.com).
-   - Click **Add New** -> **Project**.
-   - Import your GitHub repository.
-   - Vercel will automatically detect the configuration and deploy the site.
 
 ## 🛠 Tech Stack
 - **HTML5 / CSS3** (Vanilla)
