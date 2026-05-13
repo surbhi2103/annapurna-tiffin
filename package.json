@@ -1,0 +1,12 @@
+{
+  "name": "annapurna-tiffin",
+  "version": "1.0.0",
+  "description": "Premium Modern Homemade Tiffin Service",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
+}

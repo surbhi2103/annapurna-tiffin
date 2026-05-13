@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annapurna Tiffin - Premium Homemade Nourishment</title>
+
+    <!-- Tailwind and Fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet" />
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#924c00",
+                        "primary-warm": "#f48b29",
+                        "on-background": "#231a13",
+                        "background": "#fff8f5"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased selection:bg-primary-warm/30">
+
+    <!-- Modern Transparent Navbar -->
+    <nav class="navbar" id="main-nav">
+        <a href="#" class="nav-logo">Annapurna Tiffin</a>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#why-us">Why us?</a>
+            <a href="#menu">Menu</a>
+            <a href="#plans">Plans</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </nav>
+
+    <!-- Premium Fullscreen Hero -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="hero-canvas"></canvas>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-heading" id="hero-title">Annapurna Tiffin</h1>
+            <p class="hero-subheading" id="hero-subtitle">Crafted with mother’s touch</p>
+            <div class="hero-ctas" id="hero-btns">
+                <a href="https://wa.me/917400888779?text=Hi%20Annapurna%20Tiffin,%20I'd%20like%20to%20order%20a%20tiffin%20plan."
+                    class="btn btn-whatsapp" target="_blank">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Order Tiffin via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-20">
+        <!-- Why Us Section -->
+        <section id="why-us" class="max-w-7xl mx-auto px-6 mb-32">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-on-background mb-4">Why Choose Annapurna</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">The perfect blend of nutrition, convenience, and
+                    uncompromising quality.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white p-10 rounded-[2rem] shadow-sm border border-orange-100 flex flex-col items-start gap-4 hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-primary-warm">
+                        <span class="material-symbols-outlined">eco</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-on-background">Fresh Ingredients</h3>
+                    <p class="text-sm text-gray-500">Sourced locally every morning to ensure maximum nutritional value
+                        and crisp taste.</p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="bg-white p-10 rounded-[2rem] shadow-sm border border-orange-100 flex flex-col items-start gap-4 hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-primary-warm">
+                        <span class="material-symbols-outlined">clean_hands</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-on-background">Hygienic Kitchen</h3>
+                    <p class="text-sm text-gray-500">Prepared in a state-of-the-art facility adhering to highest
+                        standards of food safety.</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="bg-white p-10 rounded-[2rem] shadow-sm border border-orange-100 flex flex-col items-start gap-4 hover:shadow-md transition-all">
+                    <div
+                        class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-primary-warm">
+                        <span class="material-symbols-outlined">local_shipping</span>
+                    </div>
+                    <h3 class="text-xl font-serif text-on-background">Daily Delivery</h3>
+                    <p class="text-sm text-gray-500">Punctual and reliable delivery right to your desk or doorstep,
+                        ensuring warm meals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="max-w-7xl mx-auto px-6 mb-32">
+            <div
+                class="bg-white rounded-[3.5rem] overflow-hidden shadow-xl border border-orange-100 flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2 h-96 md:h-auto relative">
+                    <img alt="Today's Lunch Thali" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1wuHmwsHTEzh14bDUVUTtoTO9EvpoEvSrmwnoapU6ggfDWwlLNFiGFgd2wjz6hc_uHEN1GAYSA7fiwtWCmwbxNdjUKZ3K8NHVE8mR03ru7zf0tg9brTJjDPqkO0aDo5whHqPi76pTop8_pOVmQMzArnuBi4q2_1tmi17tuMg2JUqjgmCf4s4EQyWBdmfqnzcPgIC-zwIcfTvuQq1xYpUcT3htOroQcFtJIj6umzHz-KaZ01OlCks8P6GyiSjVdRt-_hedSE7N--U" />
+                </div>
+                <div class="w-full md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+                    <div class="flex gap-2 mb-6">
+                        <span
+                            class="px-4 py-1.5 bg-green-100 text-green-800 text-xs font-bold rounded-full border border-green-200 uppercase tracking-wide">Pure
+                            Veg</span>
+                        <span
+                            class="px-4 py-1.5 bg-orange-100 text-primary-warm text-xs font-bold rounded-full border border-orange-200 uppercase tracking-wide">Premium
+                            Thali</span>
+                    </div>
+                    <h3 class="text-4xl font-serif mb-6 leading-tight">Classic Punjabi Thali</h3>
+                    <ul class="space-y-4 mb-10 text-gray-600">
+                        <li class="flex items-center gap-4 text-lg"><span
+                                class="material-symbols-outlined text-primary-warm text-xl">check_circle</span> Dal
+                            Makhani (Slow-cooked)</li>
+                        <li class="flex items-center gap-4 text-lg"><span
+                                class="material-symbols-outlined text-primary-warm text-xl">check_circle</span> Paneer
+                            Butter Masala</li>
+                        <li class="flex items-center gap-4 text-lg"><span
+                                class="material-symbols-outlined text-primary-warm text-xl">check_circle</span> Jeera
+                            Rice & 3 Butter Phulkas</li>
+                    </ul>
+                    <a href="https://wa.me/917400888779"
+                        class="bg-orange-50 text-primary-warm px-10 py-4 rounded-full font-bold hover:bg-orange-100 transition-all self-start border border-orange-200 shadow-sm">View
+                        Weekly Menu</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Plans Section -->
+        <section id="plans" class="max-w-7xl mx-auto px-6 mb-32">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-on-background mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Choose a plan that fits your lifestyle. No hidden fees,
+                    cancel anytime.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Basic Plan -->
+                <div class="plan-card bg-white p-12 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center">
+                    <h3 class="text-2xl font-serif mb-2">Basic</h3>
+                    <p class="text-sm text-gray-500 mb-8">Perfect for office lunches</p>
+                    <div class="mb-8">
+                        <span class="text-5xl font-bold text-primary-warm">₹2400</span>
+                        <span class="text-gray-500 text-lg">/mo</span>
+                    </div>
+                    <p class="font-semibold text-lg mb-10">1 Meal/Day<br><span
+                            class="text-sm font-normal text-gray-400">Mon-Fri</span></p>
+                    <a href="https://wa.me/917400888779?text=Interested%20in%20Basic%20Plan"
+                        class="w-full bg-orange-50 text-primary-warm py-4 rounded-full font-bold hover:bg-orange-100 transition-all border border-orange-100">Subscribe
+                        Now</a>
+                </div>
+                <!-- Standard Plan -->
+                <div
+                    class="plan-card featured p-12 rounded-[2.5rem] relative flex flex-col items-center text-center transform md:-translate-y-6">
+                    <div
+                        class="absolute -top-5 bg-primary-warm text-white px-6 py-2 rounded-full text-sm font-bold uppercase tracking-widest shadow-lg">
+                        Most Popular</div>
+                    <h3 class="text-3xl font-serif mb-2">Standard</h3>
+                    <p class="text-sm text-gray-500 mb-8">Complete daily nourishment</p>
+                    <div class="mb-8">
+                        <span class="text-6xl font-bold text-primary-warm">₹4500</span>
+                        <span class="text-gray-500 text-lg">/mo</span>
+                    </div>
+                    <p class="font-semibold text-lg mb-10">2 Meals/Day<br><span
+                            class="text-sm font-normal text-gray-400">Mon-Fri</span></p>
+                    <a href="https://wa.me/917400888779?text=Interested%20in%20Standard%20Plan"
+                        class="w-full bg-primary-warm text-white py-5 rounded-full font-bold hover:brightness-110 transition-all shadow-xl">Subscribe
+                        Now</a>
+                </div>
+                <!-- Premium Plan -->
+                <div class="plan-card bg-white p-12 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center">
+                    <h3 class="text-2xl font-serif mb-2">Premium</h3>
+                    <p class="text-sm text-gray-500 mb-8">The ultimate convenience</p>
+                    <div class="mb-8">
+                        <span class="text-5xl font-bold text-primary-warm">₹5800</span>
+                        <span class="text-gray-500 text-lg">/mo</span>
+                    </div>
+                    <p class="font-semibold text-lg mb-10">2 Meals/Day<br><span
+                            class="text-sm font-normal text-gray-400">Mon-Sat</span></p>
+                    <a href="https://wa.me/917400888779?text=Interested%20in%20Premium%20Plan"
+                        class="w-full bg-orange-50 text-primary-warm py-4 rounded-full font-bold hover:bg-orange-100 transition-all border border-orange-100">Subscribe
+                        Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="max-w-7xl mx-auto px-6 mb-32">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-on-background mb-4">Happy Customers</h2>
+                <p class="text-gray-600">What people are saying about our homemade taste.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-orange-50 shadow-sm italic text-gray-600">
+                    "The taste is exactly like home. I've tried many tiffin services, but Annapurna is the best in terms
+                    of hygiene and flavor."
+                    <div class="mt-6 font-bold not-italic text-on-background text-sm">— Rajesh Kumar, IT Professional
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-orange-50 shadow-sm italic text-gray-600">
+                    "Saves me so much time every day. The packaging is premium and the food is always warm when it
+                    arrives."
+                    <div class="mt-6 font-bold not-italic text-on-background text-sm">— Sneha Sharma, Designer</div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-orange-50 shadow-sm italic text-gray-600">
+                    "Authentic Punjabi taste! Their Dal Makhani is to die for. Highly recommended for anyone missing
+                    home food."
+                    <div class="mt-6 font-bold not-italic text-on-background text-sm">— Amanpreet Singh, Entrepreneur
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="max-w-3xl mx-auto px-6 mb-32">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-semibold">Do you deliver to my area?</h4>
+                        <span
+                            class="material-symbols-outlined text-primary-warm transition-transform group-hover:rotate-180">expand_more</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-semibold">Can I get a trial meal before subscribing?</h4>
+                        <span
+                            class="material-symbols-outlined text-primary-warm transition-transform group-hover:rotate-180">expand_more</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-orange-100 group cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-semibold">Is the food purely vegetarian?</h4>
+                        <span
+                            class="material-symbols-outlined text-primary-warm transition-transform group-hover:rotate-180">expand_more</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-orange-100 py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
+            <div class="max-w-sm">
+                <span class="text-3xl font-serif text-primary-warm">Annapurna Tiffin</span>
+                <p class="text-gray-500 mt-6 text-lg">Crafting nutritious homemade meals with a mother's touch. Fresh,
+                    hygienic, and delivered to your doorstep every day.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-24">
+                <div class="flex flex-col gap-4">
+                    <h5 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Explore</h5>
+                    <a href="#home" class="text-gray-600 hover:text-primary-warm transition-colors">Home</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-primary-warm transition-colors">Why us?</a>
+                    <a href="#menu" class="text-gray-600 hover:text-primary-warm transition-colors">Menu</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h5 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Service</h5>
+                    <a href="#plans" class="text-gray-600 hover:text-primary-warm transition-colors">Plans</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-primary-warm transition-colors">Reviews</a>
+                    <a href="#faq" class="text-gray-600 hover:text-primary-warm transition-colors">FAQ</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h5 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Support</h5>
+                    <a href="https://wa.me/917400888779" target="_blank"
+                        class="text-gray-600 hover:text-primary-warm transition-colors">WhatsApp</a>
+                    <a href="#" class="text-gray-600 hover:text-primary-warm transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-orange-50 text-center text-sm text-gray-400">
+            © 2024 Annapurna Tiffin. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
